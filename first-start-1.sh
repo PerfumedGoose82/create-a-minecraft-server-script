@@ -4,13 +4,13 @@ read -p "Press f once you have placed the server file in the folder " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Ff]$ ]]
 then
-sleep 5
+cd ~/Desktop/Minecraft\ Server/
 mv *.jar server.jar
 cp ngrok-start.sh ~/
 cp eula.sh ~/
 java -jar server.jar 
 echo "Now you have to accept the eula, replace false with true then press the keys ctrl+o and ctrl+x"
-sleep 5
+sleep 7
     osascript -e 'tell app "Terminal"
         do script "sh eula.sh"
     end tell'
