@@ -45,4 +45,4 @@ read text
 echo ""$text"Gb of ram allocated to server"
 sleep 1
 java -Xmx"$text"G -Xms"$text"G -jar server.jar
-
+exit
