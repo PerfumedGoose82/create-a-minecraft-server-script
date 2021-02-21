@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Make sure your terminal directory is in the same folder as this script or it will not work!"
+
 # copy contents into server folder
 mkdir ~/Desktop/Minecraft\ Server/
 cp * ~/Desktop/Minecraft\ Server/
