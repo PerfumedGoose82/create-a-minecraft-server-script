@@ -16,3 +16,6 @@ Linux is not tested yet so you may run into some problems on it.
 8. Run the server again.
 9. Choose to set authtoken for ngrok and/or run ngrok.
 10. Done, you have created yourself your very own minecraft server.
+
+# Side note
+Once you have ran run-this-first.sh you have to use start.sh to start the minecraft server
