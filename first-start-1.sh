@@ -25,8 +25,12 @@ read -p "Press f when you are ready to start the server and have an account " -n
 echo
 if [[ $REPLY =~ ^[Ff]$ ]]
 then
+echo "Now you can launch the server from start.sh"
+sleep 3
 sh start.sh
 fi
 fi
+echo "Now you can start the server with start.sh"
+sleep 3
 sh start.sh
 fi
