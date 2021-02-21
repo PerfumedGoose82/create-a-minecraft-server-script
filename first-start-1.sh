@@ -28,9 +28,11 @@ then
 echo "Now you can launch the server from start.sh"
 sleep 3
 sh start.sh
+exit
 fi
 fi
 echo "Now you can start the server with start.sh"
 sleep 3
 sh start.sh
+exit
 fi
