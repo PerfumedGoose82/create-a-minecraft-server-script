@@ -1,9 +1,11 @@
-# minecraft-server-script
+# Start a Minecraft server on macOS without port forwarding
 
 this script will start a minecraft server on Linux or macOS,
 pretty self explanitory.
-Linux not tested yet so you may run into some problems.
+Linux is not tested yet so you may run into some problems on it.
 
 
 
-Get started by downloading the zip, uncompressing it, then run first-start.sh.
+Get started by downloading the zip, uncompressing it, then run run-this-script-first.sh while
+# IN THE SAME DIRECTORY AS THE SCRIPTS.
+If are not in the same directory as the script in terminal when running, problems will occur.
