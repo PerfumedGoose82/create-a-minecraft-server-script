@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Make sure your terminal directory is in the same folder as this script or it will not work!"
+echo "If you are on Linux and get an error saying open: command not found, ignore it, it is for macOS users"
 
 # copy contents into server folder
 mkdir ~/Desktop/Minecraft\ Server/
