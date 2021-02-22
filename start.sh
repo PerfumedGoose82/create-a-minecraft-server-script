@@ -8,12 +8,21 @@
 
 clear
 
-# Prompt the user if they want to update the authoken for ngrok
-
-read -p "Do you want to set the authtoken for ngrok? " -n 1 -r
-echo    # (optional) move to a new line
+read -p "Would you like to add plugins to the server? (Will not work if you have a vanilla minecraft server) " -n 1 -r
+echo    
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+    read -p "Drag plugin files into here: "
+    cp "$REPLY" plugins/
+fi
+clear
+
+# Prompt the user if they want to update the authoken for ngrok
+read -p "Do you want to set the authtoken for ngrok? " -n 1 -r
+echo    
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    clear
     echo "A window will open showing the authtoken command, please enter it here"
     sleep 3
     open https://dashboard.ngrok.com/get-started/setup
@@ -24,9 +33,9 @@ then
     sleep 2
     rm -f authtoken.sh
 fi
+clear
 
 # Does the user want to start ngrok
-
 read -p "Would you like to start ngrok? (Opens a new terminal window) " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -39,10 +48,12 @@ then
         do script "sh ngrok-start.sh"
     end tell'   
 fi
-    
+clear
+
+# do i have to explain, its right here  \/
 echo "How many gigabytes of ram would you like to allocate to the server?"
 read text
-echo ""$text"Gb of ram allocated to server"
+echo ""$text"GB of ram allocated to server"
 sleep 1
 java -Xmx"$text"G -Xms"$text"G -jar server.jar
 exit
