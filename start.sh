@@ -54,19 +54,6 @@ then
 fi
 clear
 
-# Does the user want a gui
-read -p "Would you like to have a gui for the server? " -n 1 -r
-echo    
-if [[ $REPLY =~ ^[Nn]$ ]]
-	then
-	echo "How many gigabytes of ram would you like to allocate to the server?"
-	read text
-	echo ""$text"GB of ram allocated to server"
-	sleep 1
-	java -Xmx"$text"G -Xms"$text"G -jar server.jar --nogui
-	exit
-fi
-
 # do i have to explain, its right here  \/
 echo "How many gigabytes of ram would you like to allocate to the server?"
 read text
