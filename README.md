@@ -3,7 +3,7 @@
 This script will start a minecraft server on Linux or macOS,
 and is pretty self explanitory.
 
-Windows support coming soon.
+Windows support coming in next release.
 
 
 # How to start making the minecraft server
