@@ -7,9 +7,6 @@
 # make sure we are in the correct directory
 cd ~/Desktop/Minecraft\ Server/
 
-# remove create-server.sh so people don't make a server attempting to start the server
-rm -f create-server.sh
-
 # clean up terminal a little
 clear
 
