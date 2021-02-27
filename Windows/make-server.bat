@@ -4,7 +4,7 @@ goto SERVER-TYPE
 
 :SERVER-TYPE
 mkdir "%USERPROFILE%\Desktop\Minecraft Server"
-copy "Extra\*" "%USERPROFILE%\Desktop\Minecraft Server\"
+copy "Start.bat" "%USERPROFILE%\Desktop\Minecraft Server\"
 set INPUT=
 set /p INPUT=Do you have java? (y/n):
 if "%INPUT%"=="n" echo Download the installer and run it & start "" https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html & pause 2
@@ -38,6 +38,7 @@ goto START
 :START
 cls
 echo to start the server again use start.bat instead of this
+pause 2
 cd %USERPROFILE%\Desktop\Minecraft Server
 call start.bat
 exit
