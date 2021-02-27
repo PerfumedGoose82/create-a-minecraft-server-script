@@ -1,9 +1,7 @@
-# Start a Minecraft server on macOS or Linux without port forwarding
+# Start a Minecraft server on macOS, Linux or Windows without port forwarding
 
 This script will start a minecraft server on Linux or macOS,
 and is pretty self explanitory.
-
-Windows support coming in next release.
 
 
 # How to start making the minecraft server
