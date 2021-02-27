@@ -32,7 +32,7 @@ goto NGROK
 :NGROK
 cls
 set /p INPUT=Do you want ngrok? (It does the port forwarding stuff without you having to change your router settings) (y/n):
-if "%INPUT%"=="y" echo make an account and download ngrok then place it in the folder on your desktop & pause 2 & start "" https://dashboard.ngrok.com/get-started/setup & cls & echo Press any key once you have placed the file in the new folder on your desktop & pause 2 & goto START
+if "%INPUT%"=="y" echo make an account and download ngrok then place it in the folder on your desktop & pause 2 & start "" https://dashboard.ngrok.com/get-started/setup & echo Press any key once you have placed the file in the new folder on your desktop & pause 2 & goto START
 goto START
 
 :START
