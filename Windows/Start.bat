@@ -11,7 +11,7 @@ echo Copy the authtoken not the command, to set the authtoken then enter it here
 start "" https://dashboard.ngrok.com/auth/your-authtoken
 set TOKEN=
 set /p TOKEN=Enter authtoken here: 
-ngrok authtoken %TOKEN%
+ngrok.exe authtoken %TOKEN%
 goto NORMAL
 
 :NORMAL
